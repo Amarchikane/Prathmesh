@@ -410,3 +410,124 @@ video {
          object-fit: cover;
 }
 }
+.counter-item-new {
+  text-align: center;
+  margin-bottom: 5px;
+  position: relative;
+  overflow: hidden;
+}
+
+.counter-item-new i {
+  font-size: 25px;
+  color: black;
+      margin-bottom: 5px;
+      margin-top: 5px;
+  display: inline-block;
+  position: relative;
+  z-index: 2;
+}
+
+.counter-item-new h2 {
+  color: black;
+  margin-top: 0;
+  margin-bottom: 5px;
+  position: relative;
+  z-index: 1;
+}
+
+.counter-item-new p {
+  font-size: 20px;
+  color: black;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.counter-new:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(to right, #c6ffdd, #fbd786, #f7797d);
+  z-index: -1;
+  opacity: 0.5;
+  transform: translateY(100%);
+  transition: transform 0.5s ease-out;
+}
+
+.counter-new:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image:linear-gradient(to right, #c6ffdd, #fbd786, #f7797d);
+  z-index: -1;
+  opacity: 0.5;
+  transform: translateY(-100%);
+  transition: transform 0.5s ease-out;
+}
+
+.counter-item-new:hover .counter-new:before {
+  transform: translateY(0%);
+}
+
+.counter-item-new:hover .counter-new:after {
+  transform: translateY(0%);
+}
+
+.counter {
+  width: 100px;
+  overflow: hidden;
+}
+.numbers {
+  width: auto;
+  display: flex;
+  animation: countNumber 4s infinite ;
+  animation-timing-function: steps(10);
+}
+.numbers div {
+  text-align: center;
+  flex: 0 0 100px;
+}
+
+@keyframes countNumber {
+  0% {
+    margin-left: 0px;
+  }
+  100% {
+    margin-left: -1000px;
+  }
+}
+@keyframes countNumberAnimation {
+  0% {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: linear-gradient(to right, #c6ffdd, #fbd786, #f7797d);
+        z-index: -1;
+        opacity: 0.5;
+        transform: translateY(100%);
+        transition: transform 0.5s ease-out;
+  }
+  100% {
+      content: '';
+       position: absolute;
+       top: 0;
+       left: 0;
+       width: 100%;
+       height: 100%;
+       background-image:linear-gradient(to right, #c6ffdd, #fbd786, #f7797d);
+       z-index: -1;
+       opacity: 0.5;
+       transform: translateY(-100%);
+       transition: transform 0.5s ease-out;
+  }
+}
+]
+
