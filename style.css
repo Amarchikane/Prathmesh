@@ -270,19 +270,14 @@ height: 150px;
   /* When the animation is finished, start again */
   animation-iteration-count: infinite;
 }
-.slide-left-class {
-  /* Start the shake animation and make the animation last for 0.5 seconds */
-  animation: slide-left 1.5s;
 
-  /* When the animation is finished, start again */
-  animation-iteration-count: 1;
-}
+
 .slide-right-class {
   /* Start the shake animation and make the animation last for 0.5 seconds */
   animation: fadeIn 3.5s;
 
   /* When the animation is finished, start again */
-  animation-iteration-count: 1;
+  animation-iteration-count: 2;
 }
 @keyframes shake {
   0% { transform: translate(1px, 1px) rotate(0deg); }
@@ -323,14 +318,14 @@ transform: translateY(0);
   animation: zoomIn 1.5s;
 
   /* When the animation is finished, start again */
-  animation-iteration-count: 1;
+  animation-iteration-count: 2;
 }
 .zoomIn-class:hover {
   /* Start the shake animation and make the animation last for 0.5 seconds */
   animation: zoomIn 1.5s;
 
   /* When the animation is finished, start again */
-  animation-iteration-count: 1;
+  animation-iteration-count: 2;
 }
 @keyframes zoomIn {
 0% {
@@ -375,6 +370,16 @@ opacity: 1;
     }
     to {
         transform: translateX(0);
+    }
+}
+@keyframes slide-right {
+    from {
+     transform: translateX(-100%);
+
+    }
+    to {
+
+ transform: translateX(0);
     }
 }
 
@@ -528,6 +533,67 @@ video {
        transform: translateY(-100%);
        transition: transform 0.5s ease-out;
   }
+}
+
+
+
+ .animate {
+  opacity: 0;
+  transition: opacity 1.5s ease-in-out;
+}
+
+.fade-in {
+  opacity: 1;
+}
+.animateslide {
+     opacity: 0;
+}
+
+.slide-up-class-annimate {
+   opacity: 1;
+ animation:slide-right 1.5s;
+}
+.slide-up-class-annimate {
+   opacity: 1;
+ animation:slide-right 1.5s;
+}
+.slide-rightclass {
+  /* Start the shake animation and make the animation last for 0.5 seconds */
+  opacity:1;
+  animation:slide-right 1.5s;
+
+}
+.slide-left-class {
+  /* Start the shake animation and make the animation last for 0.5 seconds */
+  opacity:1;
+  animation: slide-left 1.5s;
+
+  /* When the animation is finished, start again */
+}
+.zoomIn-class {
+  opacity:1;
+  /* Start the shake animation and make the animation last for 0.5 seconds */
+  animation: zoomIn 1.5s;
+}
+.zoomIn-class:hover {
+  opacity:1;
+  /* Start the shake animation and make the animation last for 0.5 seconds */
+  animation: zoomIn 1.5s;
+
+  /* When the animation is finished, start again */
+}
+
+
+.reveal{
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: 1s all ease;
+}
+
+.reveal.active{
+  transform: translateY(0);
+  opacity: 1;
 }
 ]
 
