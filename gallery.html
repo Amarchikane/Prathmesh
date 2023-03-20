@@ -1,129 +1,580 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
     <title>Prathmesh Ghate Graphics</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
-    <style>
-
-section{
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-
-.reveal{
-  position: relative;
-  transform: translateY(150px);
-  opacity: 0;
-  transition: 1s all ease;
-}
-
-.reveal.active{
-  transform: translateY(0);
-  opacity: 1;
-}
-    </style>
 </head>
 <body>
-<section>
-    <h1>Scroll Down to Reveal Elements &#8595;</h1>
-</section>
-<section>
+<!-- Navigation Bar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+    <a class="navbar-brand" href="#" style="    margin-right: -8px;">
+        <img src="47553ef6-f73e-4881-ad57-89073483f8ca.jpg" width="30" height="30" alt="">
+    </a>
+    <a class="navbar-brand" href="#">Prathmesh Ghate Graphics</a>
+    <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+    >
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#services">Services</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#portfolio">Portfolio</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#contact">Contact</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<!-- Header Section -->
+<header class="bg-dark text-light py-4">
+    <div class="container ">
+        <video autoplay muted loop class="d-none d-lg-block" muted="muted">
+            <source src="WhatsApp Video 2023-03-15 at 2.27.03 PM.mp4" type="video/mp4">
+            Your browser does not support the video tag. I suggest you upgrade your browser.
+        </video>
+        <div class="row" style="position: relative;">
+            <div class="col-md-6 slide-left-class">
+                <h1>Prathmesh Ghate Graphics</h1>
+                <p class="lead">Graphic Designer from Pune with over 4 years of experience</p>
+            </div>
+            <div class="col-md-6 slide-right-class">
+
+                <img
+                        src="47553ef6-f73e-4881-ad57-89073483f8ca.jpg"
+                        alt="Prathmesh Ghate Graphics"
+                        class="img-fluid rounded-circle imghover"
+                />
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- Services Section -->
+<section id="services" class="py-4 ">
     <div class="container reveal">
-        <h2>Caption</h2>
-        <div class="text-container">
-            <div class="text-box">
-                <h3>Section Text</h3>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore
-                    eius molestiae perferendis eos provident vitae iste.
-                </p>
+        <br>
+        <hr>
+        <br>
+        <div class="row">
+            <div class="col-md-4 animate" data-animate="slide-left-class">
+                <div class="card">
+                    <div class="card-body">
+                        <h3 class="card-title">Social Media Banner</h3>
+                        <p class="card-text">
+                            We create stunning social media banners that will help you stand out on various social media
+                            platforms.
+                        </p>
+                    </div>
+                </div>
             </div>
-            <div class="text-box">
-                <h3>Section Text</h3>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore
-                    eius molestiae perferendis eos provident vitae iste.
-                </p>
+            <div class="col-md-4 animate" data-animate="slide-rightclass">
+                <div class="card">
+                    <div class="card-body">
+                        <h3 class="card-title">Social Media Marketing</h3>
+                        <p class="card-text">
+                            We can help you boost your social media presence and get more followers and customers.
+                        </p>
+                    </div>
+                </div>
             </div>
-            <div class="text-box">
-                <h3>Section Text</h3>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore
-                    eius molestiae perferendis eos provident vitae iste.
-                </p>
+            <div class="col-md-4 animate" data-animate="slide-left-class">
+                <div class="card">
+                    <div class="card-body">
+                        <h3 class="card-title">Commercial Work</h3>
+                        <p class="card-text">
+                            We also offer commercial graphic design services for businesses of all sizes.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<br>
+<hr>
+<br>
+<section id="view">
+    <div class="container reveal">
+        <div class="row">
+            <div class="col-sm-4">
+                <div class="counter-item-new animate" data-animate="slide-left-class">
+                    <i class="fa fa-users"></i>
+                    <h2 class="counter-new" data-count="523">
+                        <div class="counter" style="display: inline-block;margin-bottom: -10px;">
+                            <div class="numbers">
+                                <div>510+</div>
+                                <div>511+</div>
+                                <div>512+</div>
+                                <div>513+</div>
+                                <div>514+</div>
+                                <div>515+</div>
+                                <div>516+</div>
+                                <div>517+</div>
+                                <div>518+</div>
+                                <div>519+</div>
+                                <div>520+</div>
+                            </div>
+                        </div>
+                    </h2>
+                    <p>Customers</p>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="counter-item-new animate" data-animate="slide-rightclass">
+                    <i class="fa fa-eye"></i>
+                    <h2 class="counter-new" data-count="523">
+                        <div class="counter" style="display: inline-block;margin-bottom: -10px;">
+                            <div class="numbers">
+                                <div>1010+</div>
+                                <div>1011+</div>
+                                <div>1012+</div>
+                                <div>1013+</div>
+                                <div>1014+</div>
+                                <div>1015+</div>
+                                <div>1016+</div>
+                                <div>1017+</div>
+                                <div>1018+</div>
+                                <div>1019+</div>
+                                <div>1020+</div>
+                            </div>
+                        </div>
+                    </h2>
+                    <p>Viewers</p>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="counter-item-new animate" data-animate="slide-left-class">
+                    <i class="fa fa-thumbs-up"></i>
+                    <h2 class="counter-new" data-count="1023">
+                        <div class="counter" style="display: inline-block;margin-bottom: -10px;">
+                            <div class="numbers">
+                                <div>25300</div>
+                                <div>25315</div>
+                                <div>25325</div>
+                                <div>25335</div>
+                                <div>25350</div>
+                                <div>25356</div>
+                                <div>25365</div>
+                                <div>25372</div>
+                                <div>25381</div>
+                                <div>25394</div>
+                                <div>25400</div>
+                            </div>
+                        </div>
+                    </h2>
+                    <p>Likes</p>
+                </div>
             </div>
         </div>
     </div>
 </section>
 
-<section>
+<!-- Portfolio Section -->
+<section id="portfolio" class="py-5">
     <div class="container reveal">
-        <h2>Caption</h2>
-        <div class="text-container">
-            <div class="text-box">
-                <h3>Section Text</h3>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore
-                    eius molestiae perferendis eos provident vitae iste.
-                </p>
+        <br>
+        <hr>
+        <br>
+        <div class="row">
+            <div class="col-md-4  animate" data-animate="zoomIn-class">
+                <div class="card">
+                    <div class="container">
+                        <div id="gallery-carousel1" class="carousel slide" data-ride="carousel" data-interval="4000">
+                            <ol class="carousel-indicators">
+                                <li data-target="#gallery-carousel" data-slide-to="0" class="active"></li>
+                                <li data-target="#gallery-carousel" data-slide-to="1"></li>
+                                <li data-target="#gallery-carousel" data-slide-to="2"></li>
+                            </ol>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="cmb1.jpeg" class="d-block w-100 img-fluid " alt="Slide 1"
+                                         style="width: 350px !important;height: 350px !important;">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="cmb2.jpeg" class="d-block w-100 img-fluid " alt="Slide 2"
+                                         style="width: 350px !important;height: 350px !important;">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="cmb3.jpeg" class="d-block w-100 img-fluid " alt="Slide 3"
+                                         style="width: 350px !important;height: 350px !important;">
+                                </div>
+                            </div>
+                            <a class="carousel-control-prev" href="#gallery-carousel1" role="button" data-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="carousel-control-next" href="#gallery-carousel1" role="button" data-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Next</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Social Media Banner</h5>
+                    </div>
+                </div>
             </div>
-            <div class="text-box">
-                <h3>Section Text</h3>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore
-                    eius molestiae perferendis eos provident vitae iste.
-                </p>
+            <div class="col-md-4  animate" data-animate="zoomIn-class">
+                <div class="card">
+                    <div class="container">
+                        <div id="gallery-carousel" class="carousel slide2" data-ride="carousel" data-interval="4000">
+                            <ol class="carousel-indicators">
+                                <li data-target="#gallery-carousel" data-slide-to="0" class="active"></li>
+                                <li data-target="#gallery-carousel" data-slide-to="1"></li>
+                                <li data-target="#gallery-carousel" data-slide-to="2"></li>
+                            </ol>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="cmm1.jpeg" class="d-block w-100 img-fluid " alt="Slide 1"
+                                         style="width: 350px !important;height: 350px !important;">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="cmm2.jpeg" class="d-block w-100 img-fluid " alt="Slide 2"
+                                         style="width: 350px !important;height: 350px !important;">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="cmm3.jpeg" class="d-block w-100 img-fluid " alt="Slide 3"
+                                         style="width: 350px !important;height: 350px !important;">
+                                </div>
+                            </div>
+                            <a class="carousel-control-prev" href="#gallery-carousel2" role="button" data-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="carousel-control-next" href="#gallery-carousel2" role="button" data-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Next</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Social Media Marketing</h5>
+                    </div>
+                </div>
             </div>
-            <div class="text-box">
-                <h3>Section Text</h3>
+            <div class="col-md-4  animate" data-animate="zoomIn-class">
+                <div class="card">
+                    <div class="container">
+                        <div id="gallery-carousel3" class="carousel slide" data-ride="carousel" data-interval="4000">
+                            <ol class="carousel-indicators">
+                                <li data-target="#gallery-carousel" data-slide-to="0" class="active"></li>
+                                <li data-target="#gallery-carousel" data-slide-to="1"></li>
+                                <li data-target="#gallery-carousel" data-slide-to="2"></li>
+                            </ol>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="cw1.jpeg" class="d-block w-100 img-fluid " alt="Slide 1"
+                                         style="width: 350px !important;height: 350px !important;">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="cw2.jpeg" class="d-block w-100 img-fluid " alt="Slide 2"
+                                         style="width: 350px !important;height: 350px !important;">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="cw3.jpeg" class="d-block w-100 img-fluid " alt="Slide 3"
+                                         style="width: 350px !important;height: 350px !important;">
+                                </div>
+                            </div>
+                            <a class="carousel-control-prev" href="#gallery-carousel3" role="button" data-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="carousel-control-next" href="#gallery-carousel3" role="button" data-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Next</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Commercial Work</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<br>
+<hr>
+<br><br>
+<section id="Review">
+    <div class="container reveal">
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <div class="card border-0 text-center  animate" data-animate="zoomIn-class">
+                    <img src="edeccd7a7466fc43bfb4010e1e542242.jpg" style=" max-width: 161px;"
+                         class="card-img-top rounded-circle mx-auto" alt="Profile Picture">
+                    <div class="card-body">
+                        <blockquote class="blockquote mb-0">
+                            <p class="card-text">"Prathmesh Ghate Graphics is a highly professional and skilled graphic
+                                design firm. They provided creative solutions that exceeded my expectations and I highly
+                                recommend them for anyone in need of top-notch design services. Thank you for your
+                                amazing work!"</p>
+                        </blockquote>
+                    </div>
+                    <div class="card-footer bg-white border-0">
+                        <span class="text-warning">&#9733; &#9733; &#9733; &#9733; &#9734;</span>
+                        <small class="text-muted ml-2">John Doe</small>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card border-0 text-center  animate" data-animate="zoomIn-class">
+                    <img src="th.jfif" style=" max-width: 161px;" class="card-img-top rounded-circle mx-auto"
+                         alt="Profile Picture">
+                    <div class="card-body">
+                        <blockquote class="blockquote mb-0">
+                            <p class="card-text">"Working with Prathmesh Ghate Graphics was a pleasure. They were
+                                professional and responsive, and the final design they provided was stunning. I would
+                                highly recommend them for exceptional graphic design services."</p>
+                        </blockquote>
+                    </div>
+                    <div class="card-footer bg-white border-0">
+                        <span class="text-warning">&#9733; &#9733; &#9733; &#9734; &#9734;</span>
+                        <small class="text-muted ml-2">Jane Smith</small>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card border-0 text-center  animate" data-animate="zoomIn-class">
+                    <img src="d6a0965b7ddc8a5c40edcfd38e2bc859.jpg" style=" max-width: 161px;"
+                         class="card-img-top rounded-circle mx-auto" alt="Profile Picture">
+                    <div class="card-body">
+                        <blockquote class="blockquote mb-0">
+                            <p class="card-text">"I was impressed by the level of creativity and attention to detail
+                                that Prathmesh Ghate Graphics put into my project. The team is highly skilled and
+                                knowledgeable, and they provided me with a design that perfectly captured my
+                                vision. </p>
+                        </blockquote>
+                    </div>
+                    <div class="card-footer bg-white border-0">
+                        <span class="text-warning">&#9733; &#9733; &#9734; &#9734; &#9734;</span>
+                        <small class="text-muted ml-2">Bob Johnson</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section>
+<!-- Gallery -->
+<section id="Gallery" class="py-5 d-none d-lg-block d-print-block animateslide" data-animate="slide-up-class-annimate">
+    <br>
+    <hr>
+    <br>
+    <div class="container reveal">
+        <div class="row">
+
+            <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
+                <img
+                        src="cmb1.jpeg"
+                        class="w-100 shadow-1-strong rounded mb-4"
+                        alt="Boat on Calm Water"
+                />
+
+                <img
+                        src="cw2.jpeg"
+                        class="w-100 shadow-1-strong rounded mb-4"
+                        alt="Wintry Mountain Landscape"
+                />
+            </div>
+
+            <div class="col-lg-4 mb-4 mb-lg-0">
+                <img
+                        src="cmb3.jpeg"
+                        class="w-100 shadow-1-strong rounded mb-4"
+                        alt="Mountains in the Clouds"
+                />
+
+                <img
+                        src="cw1.jpeg"
+                        class="w-100 shadow-1-strong rounded mb-4"
+                        alt="Boat on Calm Water"
+                />
+            </div>
+
+            <div class="col-lg-4 mb-4 mb-lg-0">
+                <img
+                        src="cmb2.jpeg"
+                        class="w-100 shadow-1-strong rounded mb-4"
+                        style="height: 400px;"
+                        alt="Waves at Sea"
+                />
+
+                <img
+                        src="cmm1.jpeg"
+                        style="height: 410px;"
+                        class="w-100 shadow-1-strong rounded mb-4"
+                        alt="Yosemite National Park"
+                />
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Gallery -->
+<br>
+<hr>
+<br>
+<!-- Contact Section -->
+<section id="contact" class="py-5 animateslide" data-animate="slide-up-class-annimate">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <h3>Contact Us</h3>
+                <form>
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" class="form-control" id="name"/>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" class="form-control" id="email"/>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea class="form-control" id="message" rows="5"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+            </div>
+            <div class="col-md-6">
+                <h3>Location</h3>
                 <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore
-                    eius molestiae perferendis eos provident vitae iste.
+                    Pune, India
                 </p>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d121059.0344739699!2d73.86296739999999!3d18.52461645!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2bf2e67461101%3A0x828d43bf9d9ee343!2sPune%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1678859255448!5m2!1sen!2sin"
+                        width="100%"
+                        height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+
             </div>
         </div>
     </div>
 </section>
 
-<section>
-    <div class="container reveal">
-        <h2>Caption</h2>
-        <div class="text-container">
-            <div class="text-box">
-                <h3>Section Text</h3>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore
-                    eius molestiae perferendis eos provident vitae iste.
-                </p>
+
+<!-- Footer Section -->
+<footer class="bg-dark text-white">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <h5>Follow Us</h5>
+                <div class="d-flex justify-content-start">
+                    <a href="#" class="text-white mr-3"><i class="fa fa-facebook fa-2x"></i></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <a href="#" class="text-white mr-3"><i class="fa fa-twitter fa-2x"></i></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <a href="#" class="text-white mr-3"><i class="fa fa-instagram fa-2x"></i></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <a href="#" class="text-white"><i class="fa fa-linkedin fa-2x"></i></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                </div>
             </div>
-            <div class="text-box">
-                <h3>Section Text</h3>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore
-                    eius molestiae perferendis eos provident vitae iste.
-                </p>
-            </div>
-            <div class="text-box">
-                <h3>Section Text</h3>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore
-                    eius molestiae perferendis eos provident vitae iste.
-                </p>
+            <div class="col-md-6 text-md-right">
+                <p class="mt-3">&copy; 2023 Prathmesh Ghate Graphics. All rights reserved.</p>
             </div>
         </div>
     </div>
-</section>
+</footer>
+<script>
+function reveal() {
+  var reveals = document.querySelectorAll(".reveal");
+
+  for (var i = 0; i < reveals.length; i++) {
+    var windowHeight = window.innerHeight;
+    var elementTop = reveals[i].getBoundingClientRect().top;
+    var elementVisible = 150;
+
+    if (elementTop < windowHeight - elementVisible) {
+      reveals[i].classList.add("active");
+    } else {
+      reveals[i].classList.remove("active");
+    }
+  }
+}
+
+window.addEventListener("scroll", reveal);
 
 
+</script>
+<script>
 
+   // counter-new Animation
+const counters = document.querySelectorAll('.counter-new');
+const speed = 200; // The lower the slower
+
+counters.forEach(counter-new => {
+  const updateCount = () => {
+    const target = +counter-new.getAttribute('data-count');
+    const count = +counter-new.innerText;
+
+    // Lower inc to slow and higher to fast
+    const inc = target / speed;
+
+    // Check if target is reached
+    if (count < target) {
+      counter-new.innerText = Math.ceil(count + inc);
+      // Call function every ms
+      setTimeout(updateCount, 1);
+    } else {
+      counter-new.innerText = target;
+    }
+  };
+
+  updateCount();
+});
+
+</script>
+<script>
+    const animateElements = document.querySelectorAll('.animate');
+
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      const animateType = entry.target.getAttribute('data-animate');
+      entry.target.classList.add(animateType);
+      observer.unobserve(entry.target);
+    }
+  });
+});
+
+animateElements.forEach(animate => {
+  observer.observe(animate);
+});
+ const animateElements1 = document.querySelectorAll('.animateslide');
+
+const observer1 = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      const animateType = entry.target.getAttribute('data-animate');
+      entry.target.classList.add(animateType);
+      observer1.unobserve(entry.target);
+    }
+  });
+});
+
+animateElements1.forEach(animate => {
+  observer1.observe(animate);
+});
+
+
+</script>
 <!-- Bootstrap JS -->
 <script src="script.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -131,3 +582,5 @@ section{
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 </body>
 </html>
+
+
